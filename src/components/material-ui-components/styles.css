@@ -1,0 +1,15 @@
+.linkedIn{
+    font-size: 20px;
+    color:rgb(66, 189, 189);
+}
+.linkedIn:hover { COLOR: rgb(66, 189, 100); TEXT-DECORATION: none; font-weight: none }
+
+@media(max-width:64em){
+    .linkedIn{
+        font-size: 12px;
+        font-weight: 300;
+    }
+    .weatherApiTitle{
+        font-size: 12px;
+    }
+}

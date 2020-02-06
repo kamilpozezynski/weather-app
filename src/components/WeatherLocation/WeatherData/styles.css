@@ -1,0 +1,59 @@
+.weatherDataCont {
+  display: grid;
+  grid-template-areas: "weatherTemperatureCont weatherExtraInfo";
+  background-color: black;
+  color: white;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.weatherExtraInfoCont {
+  grid-area: weatherExtraInfo;
+}
+.weatherTemperatureCont {
+  grid-area: weatherTemperatureCont;
+  color: rgb(66, 189, 189);
+}
+.temperature {
+  font-size: 28px;
+  font-weight: bold;
+  padding-left: 20px;
+}
+.temperatureType {
+  font-size: 15px;
+  font-weight: 300;
+}
+.details {
+  width: 100%;
+  background-color: antiquewhite;
+  max-height: 90vh;
+  overflow: auto;
+}
+.weatherIcon{
+  margin: 10px 0;
+}
+@media (max-width: 30em) {
+  .weatherDataCont {
+    display: grid;
+    justify-content: center;
+    grid-template-areas:
+      "weatherTemperatureCont"
+      "weatherExtraInfo";
+  }
+}
+@media(max-width: 64em){
+  .details{
+      max-height: 70vh;
+      overflow: auto;
+      margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 45em){
+  .details{
+      max-height: 50vh;
+      overflow: auto;
+      margin-bottom: 20px;
+  }
+}
